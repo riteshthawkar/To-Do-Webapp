@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Moment cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <title>TODO App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main-container">
+            <nav>
+                <h2>ToDo App</h2>
+            </nav>
+            <div class="tool">
+                <input type="text" class="add-task-title" placeholder="Task Here..."/>
+                <button class="add-task btn" onclick="addTask()">Add Task</button>
+            </div>
+            <div class="task-list">
+
+            </div>
+        </div>
+
+        <div class="hidden">
+            <form class="edit-form">
+                <label for="title">Title</label>
+                <input id="title"  placeholder="Task Here..."/>
+                <div class="due-data">
+                    <label for="date-picker">Due Date</label>
+                    <input type="date" id="date-picker" placeholder="dd/mm/yy"/>
+                    <label for="time-picker">Due Time</label>
+                    <input id="time-picker" type="time" placeholder="00:00 pm" />
+                </div>
+                <button type="submit" id="save-task">Save</button>
+            </form>
+        </div>
+        <div class="cover-hidden"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
